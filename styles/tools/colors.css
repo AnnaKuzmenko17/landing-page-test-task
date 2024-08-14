@@ -1,0 +1,11 @@
+:root {
+  --main-text: #001e41;
+  --menu-text: #7d7d7d;
+  --gray-text: #909090;
+  --page-bg: #ffffff;
+  --button-bg: #5d78ff;
+  --button-disable: #aed1ff;
+  --hero-bg: #e2f2ff;
+  --card-bg: #f8f8fa;
+  --card-number-bg: #e3eeff;
+}
