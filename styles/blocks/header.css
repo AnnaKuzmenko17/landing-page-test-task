@@ -1,0 +1,119 @@
+.page-header {
+  border-bottom: 1px solid #e5e5e5;
+  background: var(--primary-background-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  height: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 18px 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 77px;
+  }
+}
+
+.logo {
+  width: 89px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 140px;
+  }
+}
+
+.nav-list {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.nav-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.nav-list__link {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--nav-text-color);
+}
+
+.nav-list__link.primary {
+  font-weight: 400;
+  color: var(--accent-color);
+  font-size: 18px;
+  line-height: 160%;
+  margin-right: 40px;
+}
+
+.con-list {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .con-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.con-list__btn__active {
+  background-color: var(--accent-color);
+  color: var(--primary-background-color);
+  border-radius: 8px;
+  border: none;
+  padding: 6px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.menu-button {
+  top: 22px;
+  right: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button svg {
+  stroke: var(--hero-text-color);
+}
+
+.menu-button svg:hover,
+.menu-button svg:focus {
+  stroke: var(--accent-color);
+}

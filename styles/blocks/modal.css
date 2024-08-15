@@ -1,0 +1,229 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--modal-backdrop-color);
+  opacity: 1;
+  visibility: visible;
+  z-index: 30;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
+  position: relative;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  width: 300px;
+  height: 413px;
+
+  background-color: var(--primary-background-color);
+  display: flex;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 800px;
+    height: 550px;
+  }
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 31px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    padding: 27px 42px;
+  }
+}
+
+.modal-left__image {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-left__image {
+    display: block;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}
+
+.modal-form__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--hero-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__title {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+}
+
+.modal-form__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.0025em;
+  color: var(--hero-text-color);
+  margin: 18px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__text {
+    margin: 24px 0;
+  }
+}
+
+.modal-label__name {
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0025em;
+  color: #919191;
+  margin-bottom: 5px;
+}
+
+.modal-label__list {
+  padding: 6px 9px;
+  width: 237px;
+  height: 28px;
+  background: var(--primary-background-color);
+  border: 0.75px solid #d5d5d6;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 10.5px;
+  color: var(--hero-text-color);
+  margin-bottom: 6px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-label__list {
+    height: 37px;
+    width: 316px;
+  }
+}
+
+.modal-form-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25.5px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-btns {
+    margin: 34px 0;
+  }
+}
+
+.modal-form__button {
+  padding: 9px 0;
+  width: 114.75px;
+  height: 32px;
+  background: #aed1ff;
+  border-radius: 5.25px;
+  border: none;
+  color: var(--hero-background-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__button {
+    padding: 12px 10px;
+    width: 153px;
+    height: 42px;
+    border-radius: 7px;
+  }
+}
+.modal-form__button.submit {
+  background: var(--accent-color);
+}
+
+.modal-form__check-agree {
+  font-weight: 400;
+  font-size: 9.75px;
+  line-height: 11px;
+  color: #919191;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__check-agree {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+.modal-form__checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.modal-form__check {
+  height: 14px;
+  margin-right: 6px;
+}
+
+.modal-form__checked {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.alert-error {
+  position: absolute;
+  display: inline-block;
+  color: red;
+  font-size: 11px;
+  bottom: 29%;
+  right: 30%;
+}
+
+@media screen and (min-width: 1200px) {
+  .alert-error {
+    right: 18%;
+    bottom: 28%;
+  }
+}
+
+.modal-label__list:focus {
+  box-shadow: 0 0 15px #7a956b;
+}
+
+.modal-label__list.error,
+.modal-form__check.error {
+  box-shadow: 0 0 10px red;
+}

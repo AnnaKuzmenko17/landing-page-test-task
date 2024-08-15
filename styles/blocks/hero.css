@@ -1,0 +1,251 @@
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--hero-background-color);
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 15px;
+    align-items: center;
+    padding: 30px 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-content {
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 106px;
+    padding: 53px 64px 53px 50px;
+  }
+}
+
+.hero-content__title {
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: var(--hero-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-content__title {
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+  }
+}
+
+.hero-content__text,
+.hero-content__desc {
+  line-height: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--hero-text-color);
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-content__text,
+  .hero-content__desc {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+  }
+}
+
+.hero-content__prim {
+  font-weight: 400;
+  font-size: 12px;
+  color: #919191;
+}
+@media screen and (min-width: 1200px) {
+  .hero-content__prim {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.0025em;
+  }
+}
+
+.hero-content__btn {
+  background: var(--accent-color);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  color: var(--hero-background-color);
+  padding: 10px 30px;
+  width: 179px;
+  height: 38px;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-content__btn {
+    margin: 16px 0 60px;
+  }
+}
+
+.hero-content__desc {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-content__desc {
+    text-align: start;
+  }
+}
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .companies {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .companies {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .companies__item:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+.companies__link {
+  display: flex;
+  justify-content: center;
+}
+
+.companies__link img {
+  width: 80%;
+}
+
+@media screen and (min-width: 1200px) {
+  .companies__link img {
+    width: 100%;
+  }
+}
+
+.hero-img {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-img {
+    width: 370px;
+    height: 442px;
+  }
+}
+
+.hero-rigth {
+  position: relative;
+}
+
+.scheme-first {
+  position: absolute;
+  top: 64%;
+  left: 0%;
+  width: 45%;
+  transform: translateY(-50%);
+  animation-name: Appearance;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+}
+
+@media screen and (min-width: 1200px) {
+  .scheme-first {
+    width: 57%;
+    top: 58%;
+    left: -32%;
+  }
+}
+
+.scheme-second {
+  position: absolute;
+  top: -8%;
+  left: 15px;
+  width: 45%;
+  animation-name: Appearance;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+}
+
+@media screen and (min-width: 1200px) {
+  .scheme-second {
+    width: 57%;
+    top: -9%;
+    left: -73px;
+  }
+}
+
+.scheme-third {
+  position: absolute;
+  top: 9%;
+  left: 57%;
+  width: 45%;
+  animation-name: Appearance;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+}
+
+@media screen and (min-width: 1200px) {
+  .scheme-third {
+    width: 55%;
+    top: 5%;
+    left: 62%;
+  }
+}
+
+@-webkit-keyframes Appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes Appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes Appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes Appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

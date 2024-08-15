@@ -1,3 +1,10 @@
-@import "./tools/reset.css";
-@import "./tools/typography.css";
+@import './tools/reset.css';
+@import './tools/typography.css';
+@import './tools/colors.css';
 
+@import './blocks/header.css';
+@import './blocks/cards.css';
+@import './blocks/hero.css';
+@import './blocks/menu.css';
+@import './blocks/footer.css';
+@import './blocks/modal.css';

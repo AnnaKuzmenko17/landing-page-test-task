@@ -1,11 +1,9 @@
 :root {
-  --main-text: #001e41;
-  --menu-text: #7d7d7d;
-  --gray-text: #909090;
-  --page-bg: #ffffff;
-  --button-bg: #5d78ff;
-  --button-disable: #aed1ff;
-  --hero-bg: #e2f2ff;
-  --card-bg: #f8f8fa;
-  --card-number-bg: #e3eeff;
+  --primary-background-color: #fff;
+  --hero-background-color: #e2f2ff;
+  --accent-color: #5d78ff;
+  --hero-text-color: #001e41;
+  --nav-text-color: #7d7d7d;
+  --card-background-color: #f8f8fa;
+  --modal-backdrop-color: rgba(0, 0, 0, 0.1);
 }
